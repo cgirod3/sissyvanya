@@ -1,4 +1,4 @@
-import { Component, Children } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import withSideEffect from 'react-side-effect';
 
