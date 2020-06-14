@@ -6,7 +6,7 @@ import Home from './Home.js';
 
 import '../styles/containers/App.css';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -15,6 +15,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
