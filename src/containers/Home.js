@@ -1,15 +1,17 @@
 import React from 'react';
 
 import BodyCssClass from '../components/BodyCssClass';
+import NavigationBar from '../components/NavigationBar';
 
 import '../styles/containers/Home.css';
 
-function Home() {
+const Home = () => {
   return (
-    <div class='Home'>
+    <div className='Home'>
+      <NavigationBar />
       <BodyCssClass cssClass="Home-body"/>
     </div>
   );
-}
+};
 
 export default Home;

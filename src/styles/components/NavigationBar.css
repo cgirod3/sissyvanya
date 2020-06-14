@@ -1,0 +1,9 @@
+.NavigationBar {
+  background-color: #2C134B;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 40px;
+  padding: 10px 20px;
+  width: auto;
+}
