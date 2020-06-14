@@ -1,0 +1,13 @@
+.Growing {
+  animation: grow 3s linear infinite;
+  left: 31vw;
+  position: absolute;
+  top: 60vh;
+  white-space: nowrap;
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(2);
+  }
+}

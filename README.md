@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+
+Simply pushing new code into `master` branch of repo will initiate a build at the Netlify site which is hosting the website.
+Once that build succeeds, it is immediately deployed to the PROD domain at https://sissyvanya.com
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -23,6 +28,8 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
+*NOTE:* An extra `_redirects` file is also built in order to handle Single-Page-Application routing. This did not come from bootstrap.
+
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
