@@ -8,8 +8,8 @@ import '../styles/containers/About.css';
 const About = () => {
   return (
     <div>
-      <NavigationBar />
       <BodyCssClass cssClass="About-body"/>
+      <NavigationBar />
     </div>
   );
 };

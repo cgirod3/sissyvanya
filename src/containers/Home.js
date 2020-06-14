@@ -8,8 +8,8 @@ import '../styles/containers/Home.css';
 const Home = () => {
   return (
     <div className='Home'>
-      <NavigationBar />
       <BodyCssClass cssClass="Home-body"/>
+      <NavigationBar />
     </div>
   );
 };
