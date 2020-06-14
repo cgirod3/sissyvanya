@@ -1,0 +1,16 @@
+.Panning {
+  animation: pan 10s linear infinite;
+  position: absolute;
+  white-space: nowrap;
+}
+
+@keyframes pan {
+  0% {
+    left: -10vw;
+    top: 70vh;
+  }
+  100% {
+    left: 110vw;
+    top: 70vh;
+  }
+}

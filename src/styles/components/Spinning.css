@@ -1,0 +1,12 @@
+.Spinning {
+  animation: spin 3s linear infinite;
+  left: 60vw;
+  position: absolute;
+  top: 10vh;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}

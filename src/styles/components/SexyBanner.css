@@ -1,0 +1,17 @@
+.SexyBanner {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.SexyBanner:hover {
+  cursor: pointer;
+}
+
+.SexyBanner-text {
+  color: purple;
+  font-family: 'Courier';
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+}
