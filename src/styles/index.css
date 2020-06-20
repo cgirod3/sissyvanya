@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.u-marginRight10 {
+  margin-right: 10px;
+}
+
+.u-marginRight20 {
+  margin-right: 20px;
+}
+
 .u-marginRight30 {
   margin-right: 30px;
 }
