@@ -1,0 +1,6 @@
+.Icons {
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 20px;
+}
