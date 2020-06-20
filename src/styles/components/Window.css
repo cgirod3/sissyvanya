@@ -1,0 +1,28 @@
+.Window {
+  background-color: beige;
+  border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+}
+
+.Window-body {
+  border: 1px solid brown;
+  height: 400px;
+  width: 500px;
+}
+
+.Window-header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.Window-header-icon {
+  cursor: pointer;
+  flex-grow: 0;
+}
+
+.Window-header-text {
+  text-align: center;
+  flex-grow: 1;
+  font-weight: bold;
+}
