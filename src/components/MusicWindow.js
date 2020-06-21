@@ -7,6 +7,7 @@ import Window from './Window';
 
 const MusicWindow = (props) => {
   const {
+    handleClick,
     handleClose,
     handleHeaderDown,
     layer,
@@ -16,6 +17,7 @@ const MusicWindow = (props) => {
 
   return (
     <Window
+      handleClick={ handleClick }
       handleClose={ handleClose }
       handleHeaderDown={ handleHeaderDown }
       layer={ layer }
@@ -31,6 +33,7 @@ const MusicWindow = (props) => {
 };
 
 MusicWindow.propTypes = {
+  handleClick: PropTypes.func.isRequired,
   handleClose: PropTypes.func.isRequired,
   handleHeaderDown: PropTypes.func,
   layer: PropTypes.number,

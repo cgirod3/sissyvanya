@@ -6,6 +6,7 @@ import '../styles/components/Window.css';
 const Window = (props) => {
   const {
     children,
+    handleClick,
     handleClose,
     handleHeaderDown,
     layer,
@@ -17,6 +18,7 @@ const Window = (props) => {
   return (
     <div
       className='Window'
+      onMouseDown={ handleClick }
       style={ {
         left,
         position: 'absolute',
@@ -37,6 +39,7 @@ const Window = (props) => {
 
 Window.propTypes = {
   children: PropTypes.element.isRequired,
+  handleClick: PropTypes.func,
   handleClose: PropTypes.func,
   handleHeaderDown: PropTypes.func,
   layer: PropTypes.number,
@@ -46,6 +49,7 @@ Window.propTypes = {
 };
 
 Window.defaultProps = {
+  handleClick: () => {},
   handleClose: () => {},
   layer: -1
 };

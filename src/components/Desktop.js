@@ -55,7 +55,6 @@ const Desktop = () => {
     setMouseDiffX(e.pageX - positions[w].left);
     setMouseDiffY(e.pageY - positions[w].top);
     setTarget(w);
-    setLayers(updateLayers(layers, w));
   };
 
   // Render component for window (w) parameter
@@ -65,6 +64,7 @@ const Desktop = () => {
     const WindowComponent = WINDOW_COMPONENTS[w];
     return (
       <WindowComponent
+        handleClick={ () => setLayers(updateLayers(layers, w)) }
         handleClose={
           () => setOn({
             ...on,
