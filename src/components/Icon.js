@@ -7,12 +7,12 @@ import OutsiteClickWrapper from './OutsideClickWrapper';
 import '../styles/components/Icon.css';
 
 const Icon = (props) => {
-  const { imgAlt, imgSrc, isLast, text } = props;
+  const { handleDoubleClick, imgAlt, imgSrc, isLast, text } = props;
 
   const [isOn, setIsOn] = useState(false);
 
   const handleClick = () => {
-    if (isOn) alert(`Alright already... ${text}`);
+    if (isOn) handleDoubleClick();
     setIsOn(!isOn);
   };
 
@@ -43,6 +43,7 @@ const Icon = (props) => {
 };
 
 Icon.propTypes = {
+  handleDoubleClick: PropTypes.func,
   imgAlt: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   isLast: PropTypes.bool,
@@ -50,6 +51,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  handleDoubleClick: () => {},
   imgAlt: 'sissy vanya',
   isLast: false
 };
