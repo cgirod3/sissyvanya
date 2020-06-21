@@ -9,6 +9,7 @@ const MusicWindow = (props) => {
   const {
     handleClose,
     handleHeaderDown,
+    layer,
     left,
     top
   } = props;
@@ -17,6 +18,7 @@ const MusicWindow = (props) => {
     <Window
       handleClose={ handleClose }
       handleHeaderDown={ handleHeaderDown }
+      layer={ layer }
       left={ left }
       title='Music'
       top={ top }
@@ -31,8 +33,16 @@ const MusicWindow = (props) => {
 MusicWindow.propTypes = {
   handleClose: PropTypes.func.isRequired,
   handleHeaderDown: PropTypes.func,
+  layer: PropTypes.number,
   left: PropTypes.number,
   top: PropTypes.number
+};
+
+MusicWindow.defaultProps = {
+  handleHeaderDown: () => {},
+  layer: -1,
+  left: 40,
+  top: 40
 };
 
 export default MusicWindow;

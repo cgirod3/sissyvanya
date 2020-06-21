@@ -8,6 +8,7 @@ const Window = (props) => {
     children,
     handleClose,
     handleHeaderDown,
+    layer,
     left,
     title,
     top
@@ -19,7 +20,8 @@ const Window = (props) => {
       style={ {
         left,
         position: 'absolute',
-        top
+        top,
+        zIndex: layer
       } }
     >
       <div className='Window-header' onMouseDown={ handleHeaderDown }>
@@ -37,13 +39,15 @@ Window.propTypes = {
   children: PropTypes.element.isRequired,
   handleClose: PropTypes.func,
   handleHeaderDown: PropTypes.func,
+  layer: PropTypes.number,
   left: PropTypes.number,
   title: PropTypes.string.isRequired,
   top: PropTypes.number
 };
 
 Window.defaultProps = {
-  handleClose: () => {}
+  handleClose: () => {},
+  layer: -1
 };
 
 export default Window;
