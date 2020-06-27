@@ -98,16 +98,16 @@ const Desktop = () => {
     >
       <Icons
         handleMusic={
-          () => setOn({
-            ...on,
-            [WINDOWS.MUSIC]: true
-          })
+          () => {
+            setOn({ ...on, [WINDOWS.MUSIC]: true });
+            setLayers(updateLayers(layers, WINDOWS.MUSIC))
+          }
         }
         handleVideo={
-          () => setOn({
-            ...on,
-            [WINDOWS.VIDEO]: true
-          })
+          () => {
+            setOn({ ...on, [WINDOWS.VIDEO]: true });
+            setLayers(updateLayers(layers, WINDOWS.VIDEO))
+          }
         }
       />
       { SUPPORTED_WINDOWS.map(w => renderWindow(w)) }
