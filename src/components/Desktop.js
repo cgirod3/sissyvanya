@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Icons from './Icons';
 import MusicWindow from './MusicWindow';
+import VideoWindow from './VideoWindow';
 
 import '../styles/components/Desktop.css';
 
@@ -17,7 +18,7 @@ const SUPPORTED_WINDOWS = [
 
 const WINDOW_COMPONENTS = {
   [WINDOWS.MUSIC]: MusicWindow,
-  [WINDOWS.VIDEO]: MusicWindow
+  [WINDOWS.VIDEO]: VideoWindow
 };
 
 const updateLayers = (layers, w) => {
@@ -28,6 +29,7 @@ const updateLayers = (layers, w) => {
 
 const Desktop = () => {
 
+  // TODO set better window position defaults
   // Set window positions
   const [positions, setPositions] = useState(SUPPORTED_WINDOWS.reduce((acc, val) => {
     acc[val] = { left: 40, top: 40 };
